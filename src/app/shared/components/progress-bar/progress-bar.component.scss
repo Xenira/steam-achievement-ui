@@ -1,0 +1,15 @@
+:host {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.background {
+    width: 100%;
+    background-color: purple;
+    .bar {
+        width: 0;
+        height: 16px;
+        transition: width 1s;
+        background-color: lightseagreen;
+    }
+}

@@ -1,5 +1,16 @@
 <div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
+  <img [src]="achievements?.game.logo" />
+  <h4>
+    {{ achievements?.game.name || 'Loading...' }}
+  </h4>
+  <h1>{{ (1 / achievements?.achievements.length * completed) | percent : '1.0-2' }}</h1>
+  <h2>({{ completed }} /
+    {{ achievements?.achievements.length }})</h2>
+  <app-progress-bar [percent]="1 / achievements?.achievements.length * completed"></app-progress-bar>
+  <app-progress-bar [percent]="1 / maxScore * score">
+  </app-progress-bar>
+  <div>
+    <app-achievement *ngFor="let achievement of achievements?.achievements" [achievement]="achievement">
+    </app-achievement>
+  </div>
 </div>

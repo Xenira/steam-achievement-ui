@@ -1,7 +1,17 @@
+@import "~roboto-npm-webfont/full/style.css";
+@import "~animate.css/animate";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 /* You can add global styles to this file, and also import other style files */
 html, body {
   margin: 0;
   padding: 0;
 
   height: 100%;
+
+  font-family: "Roboto";
+  font-weight: 400;
+  color: white;
 }

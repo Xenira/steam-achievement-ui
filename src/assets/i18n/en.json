@@ -1,7 +1,26 @@
 {
-  "PAGES": {
-      "HOME": {
-          "TITLE": "App works !"
+  "pages": {
+    "profile": {
+      "analysis": {
+        "state": {
+          "readProfile": {
+            "headline": "Reading Profile...",
+            "description": "Getting things ready to start analysis."
+          },
+          "gatherData": {
+            "headline": "Gathering Game Data...",
+            "description": "Getting achievements for {{curr}} / {{max}} ({{game}})"
+          },
+          "sleep": {
+            "headline": "Taking a short break...",
+            "description": "We want to be nice to the steam servers, won't we?"
+          },
+          "error": {
+            "headline": "Upsi!",
+            "description": "Something went seriously wrong! Here are the details: {{message}}"
+          }
+        }
       }
+    }
   }
 }

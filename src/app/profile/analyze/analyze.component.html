@@ -1,0 +1,8 @@
+<div class="progress-container flex flex-row">
+    <fa-icon *ngIf="iconVisible" [icon]="icon" [@fadeInLeftOnEnter] [@fadeOutRightOnLeave]></fa-icon>
+    <div class="text-center flex-1">
+        <div translate class="text-lg">pages.profile.analysis.state.{{state}}.headline</div>
+        <div translate [translateParams]="{game: currentGame?.name, curr: currentIndex, max: totalCount}"
+            class="text-gray-600">pages.profile.analysis.state.{{state}}.description</div>
+    </div>
+</div>

@@ -3,14 +3,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: snow;
 
-  background: url(../../assets/background.jpg) no-repeat center fixed;
+  background: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/206440/150db29a236ead3226d4b5f749119cca71a95548.jpeg) no-repeat center fixed;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
 
   .title {
-    color: white;
     margin: 0;
     padding: 50px 20px;
+  }
+
+  > div {
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
   }
 }

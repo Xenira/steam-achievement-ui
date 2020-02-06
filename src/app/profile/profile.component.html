@@ -1,0 +1,8 @@
+<div *ngIf="!profile">
+    loading...
+</div>
+<div *ngIf="profile">
+    <p>profile works!</p>
+    <img [src]="profile?.avatarFull" class="rounded-full" />
+    <app-analyze [profile]="profile"></app-analyze>
+</div>
